@@ -1,0 +1,6 @@
+//用Math类找a，b之间随机数
+        int a=4;
+        int b=5;
+        for (int i = 0; i <10 ; i++) {
+            System.out.println(Math.round(Math.random()*Math.abs(a-b)+Math.min(a,b)));
+        }

@@ -8,7 +8,7 @@
   public static String reverse(String str,int start,int end){
             //创建字符类型数组 str代表要翻转的数组 start代表起始索引 end代表结束索引
             //临界情况判断
-            if(str!=null&&end>start&&end<str.length()){
+            if(str!=null && end>start && end<str.length()&& start>0){
                 throw new RuntimeException("参数不正确");
             }
             char[] ch=str.toCharArray();

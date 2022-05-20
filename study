@@ -4,3 +4,17 @@
         for (int i = 0; i <10 ; i++) {
             System.out.println(Math.round(Math.random()*Math.abs(a-b)+Math.min(a,b)));
         }
+ //翻转字符串指定位置的方法
+ public static String reverse(String str,int start,int end){
+            //创建字符类型数组 str代表要翻转的数组 start代表起始索引 end代表结束索引
+            char[] ch=str.toCharArray();
+            char temp;
+            for (int i = 0; i <(end-start)/2+1; i++) {
+                 temp=ch[end-i];
+                 ch[end-i]=ch[start+i];
+                ch[start+i]=temp;
+            }
+            str = String.valueOf(ch);
+            return str;
+        }        
+        
